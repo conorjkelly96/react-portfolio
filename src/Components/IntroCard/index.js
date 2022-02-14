@@ -31,7 +31,7 @@ const card = (
 
 export const IntroCard = () => {
   return (
-    <Box sx={{ minWidth: 275 }}>
+    <Box style={{ display: "block", margin: "auto" }} sx={{ minWidth: 275 }}>
       <Card variant="outlined">{card}</Card>
     </Box>
   );

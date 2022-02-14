@@ -27,7 +27,10 @@ export const Header = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar
+      style={{ background: "#2E3B55", display: "block", margin: "auto" }}
+      position="static"
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
