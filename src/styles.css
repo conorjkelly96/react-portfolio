@@ -32,6 +32,6 @@
     "Liberation Mono", "Courier New", monospace;
 }
 
-.container {
-  display: "flex";
+body {
+  margin: 0;
 }
