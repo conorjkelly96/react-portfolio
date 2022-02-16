@@ -13,7 +13,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 
-const pages = ["Home", "About", "Portfolio", "Contact Me"];
+const pages = ["Home", "About Me", "Portfolio", "Contact Me"];
 
 export const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
