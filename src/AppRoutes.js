@@ -1,20 +1,18 @@
 import { Route, Routes } from "react-router-dom";
-import { Home } from "./pages/Home";
 
-// import ContactMe from "./pages/ContactMe";
-// import AboutMe from "./pages/AboutMe";
-// import Portfolio from "./pages/Portfolio";
-// import Home from "./pages/Home";
+import { Home } from "./pages/Home";
+import { AboutMe } from "./pages/AboutMe";
+import { Portfolio } from "./pages/Portfolio";
+import { ContactMe } from "./pages/ContactMe";
 
 export const AppRoutes = () => {
   return (
     <Routes>
-      <Route exact path="/">
-        <Home />
-      </Route>
-      <Route exact={true} path="/portfolio" />
-      <Route exact={true} path="/about-me" />
-      <Route exact={true} path="/contact-me" />
+      <Route path="/*" element={<Home />}></Route>
+      <Route path="/about-me" element={<AboutMe />} exact={true}></Route>
+      <Route path="/portfolio" element={<Portfolio />} exact={true}></Route>
+      <Route path="/contact-me" element={<ContactMe />} exact={true}></Route>
+      {/* <Route path="/resume" element={<ResumePage />} exact={true}></Route> */}
     </Routes>
   );
 };
