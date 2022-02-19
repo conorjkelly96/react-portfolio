@@ -9,7 +9,6 @@ export const App = () => {
     <Router>
       <NavBar />
       <AppRoutes />
-      <Home />
     </Router>
   );
 };
