@@ -31,7 +31,7 @@ export const NavBar = () => {
   return (
     <>
       <MobileNavBar open={showDrawer} onClose={handleCloseDrawer} />
-      <AppBar position="static">
+      <AppBar position="relative">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Typography
