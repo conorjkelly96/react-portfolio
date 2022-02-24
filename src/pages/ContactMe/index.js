@@ -1,3 +1,9 @@
+import { ContactMeForm } from "../../components/ContactMeForm";
+
 export const ContactMe = () => {
-  return <div>ContactMe</div>;
+  return (
+    <div>
+      <ContactMeForm />
+    </div>
+  );
 };
