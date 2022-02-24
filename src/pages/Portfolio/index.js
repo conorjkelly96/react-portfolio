@@ -20,7 +20,7 @@ export const Portfolio = () => {
     <Box component="div">
       <Grid container justify="center">
         {projects.map((project, index) => (
-          <Grid item xs={6} sm={6} md={4} lg={4} xl={2} key={index}>
+          <Grid item xs={12} sm={6} md={4} lg={4} xl={2} key={index}>
             <Card className={classes.cardContainer}>
               <CardMedia
                 component="img"
