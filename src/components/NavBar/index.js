@@ -13,8 +13,8 @@ import { MobileNavBar } from "../MobileNavBar.js/index.js";
 const pages = [
   { label: "Home", href: "/" },
   { label: "Projects", href: "/portfolio" },
-  { label: "Contact Me", href: "/contact-me" },
   { label: "Resume Page", href: "/resume" },
+  { label: "Contact Me", href: "/contact-me" },
 ];
 
 export const NavBar = () => {
