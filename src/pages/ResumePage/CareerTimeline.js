@@ -14,11 +14,11 @@ export const CareerTimeline = () => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          date="2011 - present"
+          date="2007 - 2010"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         >
-          <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+          <h3 className="vertical-timeline-element-title">Aloha College</h3>
+          <h4 className="vertical-timeline-element-subtitle">Malaga, Spain</h4>
           <p>
             Creative Direction, User Experience, Visual Design, Project
             Management, Team Leading
@@ -26,75 +26,74 @@ export const CareerTimeline = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2010 - 2011"
+          date="2010 - 2013"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         >
-          <h3 className="vertical-timeline-element-title">Art Director</h3>
+          <h3 className="vertical-timeline-element-title">
+            St Benedict's Catholic High School
+          </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
+            Warwickshire, UK
           </h4>
           <p>
-            Creative Direction, User Experience, Visual Design, SEO, Online
-            Marketing
+            10 GCSEs, A-C: As in Mathematics, English, Spanish, Geography &
+            Business Studies
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2008 - 2010"
+          date="2013 - 2015"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
+          <h3 className="vertical-timeline-element-title">
+            Alcester Grammar School
+          </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Los Angeles, CA
+            Warwickshire, UK
           </h4>
-          <p>User Experience, Visual Design</p>
+          <p>
+            A Levels: Business Studies (A), English Language (A), Spanish (C)
+          </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2006 - 2008"
+          date="2015 - 2019"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
-          </h4>
-          <p>User Experience, Visual Design</p>
+          <h3 className="vertical-timeline-element-title">
+            University of Southampton | Business Management BSc
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">Southampton UK</h4>
+          <p>Grade: First Class Honours | 4.0 GPA</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="April 2013"
+          date="2017-2018"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
         >
           <h3 className="vertical-timeline-element-title">
-            Content Marketing for Web, Mobile and Social Media
+            International Programme Managenent, Jaguar Land Rover
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-          <p>Strategy, Social Media</p>
+          <h4 className="vertical-timeline-element-subtitle">Birmingham, UK</h4>
+          <p>
+            UK Lead for launching 18MY Flex Fuel Program for Discovery Sport /
+            Range Rover Evoque Brazil | Chassis & Powertrain Engineering
+            workstream lead for Ex-Tarifario project| Lead Analyst for Packaging
+            Optimization workstream
+          </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="November 2012"
+          date="2019 - present"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
         >
           <h3 className="vertical-timeline-element-title">
-            Agile Development Scrum Master
+            Senior Consultant, Oracle Corporation
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">Certification</h4>
+          <h4 className="vertical-timeline-element-subtitle">London, UK</h4>
           <p>Creative Direction, User Experience, Visual Design</p>
         </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="2002 - 2006"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Bachelor of Science in Interactive Digital Media Visual Imaging
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            Bachelor Degree
-          </h4>
-          <p>Creative Direction, Visual Design</p>
-        </VerticalTimelineElement>
+
         <VerticalTimelineElement
           iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
         />
@@ -102,90 +101,3 @@ export const CareerTimeline = () => {
     </div>
   );
 };
-
-{
-  /* <VerticalTimeline>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="3 months ago"
-          iconStyle={{ background: "transparent" }}
-          icon={"PLACEHOLDER"}
-        >
-          <h3 className="vertical-timeline-element-title">Lorem Ipsum</h3>
-          <h4 className="vertical-timeline-element-subtitle">New Orleans</h4>
-          <p>
-            <NavLink to="/spinner" exact>
-              Circuit request created
-            </NavLink>
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2 months ago"
-          iconStyle={{ background: "transparent" }}
-          icon={"PLACEHOLDER"}
-        >
-          <h3 className="vertical-timeline-element-title">ipsum Lorem</h3>
-          <h4 className="vertical-timeline-element-subtitle">Bahamas</h4>
-          <p>Provision Circuit</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="1 month ago"
-          iconStyle={{ background: "transparent" }}
-          icon={"PLACEHOLDER"}
-        >
-          <h3 className="vertical-timeline-element-title">Lorem Ipsum</h3>
-          <h4 className="vertical-timeline-element-subtitle">New Orleans</h4>
-          <p>Confirm circuit provision (Y/N)</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2 weeks ago"
-          iconStyle={{ background: "transparent" }}
-          icon={"PLACEHOLDER"}
-        >
-          <h3 className="vertical-timeline-element-title">ipsum Lorem</h3>
-          <h4 className="vertical-timeline-element-subtitle">India</h4>
-          <p>Itemized Invoice created!</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="5 days ago"
-          iconStyle={{ background: "transparent" }}
-          icon={"PLACEHOLDER"}
-        >
-          <h3 className="vertical-timeline-element-title">Lorem Ipsum</h3>
-          <h4 className="vertical-timeline-element-subtitle">New Orleans</h4>
-          <p>DXC Auditor(querying the blockchain)</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="1 day ago"
-          iconStyle={{ background: "transparent" }}
-          icon={"PLACEHOLDER"}
-          position="left"
-        >
-          <h3 className="vertical-timeline-element-title">Lorem Ipsum</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            DXC Network analyst
-          </h4>
-          <p>Exception between invoice and circuit</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="6 hours ago"
-          iconStyle={{ background: "transparent" }}
-          icon={"PLACEHOLDER"}
-        >
-          <h3 className="vertical-timeline-element-title">Lorem Ipsum</h3>
-          <h4 className="vertical-timeline-element-subtitle">New Orleans</h4>
-          <p>DXC Account Payble</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          date="few secons ago"
-          iconStyle={{ background: "transparent" }}
-          icon={"PLACEHOLDER"}
-        />
-      </VerticalTimeline> */
-}

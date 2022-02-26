@@ -19,8 +19,28 @@ const card = (
         Oracle Senior Consultant & Software Developer 👨‍💻
       </Typography>
       <Typography variant="body2">
-        Applying my background in business management with full stack technical
-        skills to solve real world problems 📊 💾 🖥️
+        <ul>
+          <li>
+            🔭 I’m currently working on StockScape 📈 alongside being a Senior
+            Consultant @ Oracle.
+          </li>
+          <li>
+            🌱 I’m currently learning HTML5, CSS3, JavaScript, jQuery,
+            Bootstrap, Express.js, React.js, Node.js, Database Theory, MongoDB,
+            MySQL & Git.
+          </li>
+          <li>👯 I’m looking to collaborate on anything!</li>
+          <li>🤝 I’m looking for help with a Demand Planning Application 🔨</li>
+          <li>👨‍💻 All of my projects are available over here</li>
+          <li>📝 I regularly write articles on this fake news website...</li>
+          <li>💬 Ask me about SuiteScript 🍫</li>
+          <li>📫 How to reach me conorjkelly96@gmail.com</li>
+          <li>📄 Know about my experiences by going over here!</li>
+          <li>
+            ⚡ Fun fact can do cross bar challenges on demand with 100% success
+            rate.
+          </li>
+        </ul>
       </Typography>
     </CardContent>
     <CardActions>
