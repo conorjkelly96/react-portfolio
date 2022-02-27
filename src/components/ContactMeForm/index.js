@@ -16,8 +16,79 @@ const theme = createTheme();
 export const ContactMeForm = () => {
   const [showNoBackEndModal, setNoBackEndModal] = useState(false);
 
+  const onSubmitContactMeForm = () => {
+    console.log("submitted form");
+    setNoBackEndModal(true);
+  };
+
+  const handleClose = () => setNoBackEndModal(false);
+
+  const handleValidation = (event) => {
+    const data = new FormData(event.currentTarget);
+    const firstName = data.get("firstName");
+    const lastName = data.get("lastName");
+    const email = data.get("email");
+    const description = data.get("description");
+
+    let errors = {};
+    let formIsValid = true;
+    const fields = [firstName, lastName, email, description];
+
+    //Name
+    if (!firstName) {
+      formIsValid = false;
+      errors[firstName] = "Cannot be empty";
+    }
+
+    if (!lastName) {
+      formIsValid = false;
+      errors[lastName] = "Cannot be empty";
+    }
+
+    if (typeof firstName && lastName !== "undefined") {
+      if (!firstName.match(/^[a-zA-Z]+$/)) {
+        formIsValid = false;
+        errors[lastName] = "Only letters";
+      }
+    }
+
+    //Email
+    if (!fields[email]) {
+      formIsValid = false;
+      errors[email] = "Cannot be empty";
+    }
+
+    if (typeof fields["email"] !== "undefined") {
+      let lastAtPos = fields["email"].lastIndexOf("@");
+      let lastDotPos = fields["email"].lastIndexOf(".");
+
+      if (
+        !(
+          lastAtPos < lastDotPos &&
+          lastAtPos > 0 &&
+          fields["email"].indexOf("@@") == -1 &&
+          lastDotPos > 2 &&
+          fields["email"].length - lastDotPos > 2
+        )
+      ) {
+        formIsValid = false;
+        errors["email"] = "Email is not valid";
+      }
+    }
+
+    this.setState({ errors: errors });
+    return formIsValid;
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
+
+    if (this.handleValidation()) {
+      console.log("Form submitted");
+    } else {
+      console.log("Form has errors");
+    }
+
     const data = new FormData(event.currentTarget);
     console.log({
       firstName: data.get("firstName"),
@@ -26,13 +97,6 @@ export const ContactMeForm = () => {
       description: data.get("description"),
     });
   };
-
-  const onSubmitContactMeForm = () => {
-    console.log("submitted form");
-    setNoBackEndModal(true);
-  };
-
-  const handleClose = () => setNoBackEndModal(false);
 
   return (
     <ThemeProvider theme={theme}>
