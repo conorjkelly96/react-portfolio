@@ -6,6 +6,10 @@ import jscodequiz from "./images/jscodequiz.gif";
 import notetakerexpress from "./images/notetaker.gif";
 import weatherdashbaord from "./images/weatherdashboard.gif";
 import opensourcelogo from "./images/opensource-logo.png";
+import graphqlapollo from "./images/graphql_apollo.png";
+import scm from "./images/scm.png";
+import boredasbook from "./images/boredasbook.gif";
+import passwordgenerator from "./images/passwordgenerator.gif";
 
 export const useStyles = makeStyles({
   cardContainer: {
@@ -80,48 +84,48 @@ export const projects = [
     image: opensourcelogo,
   },
   {
-    title: "StockScape",
+    title: "Graph QL Boilerplate Code",
     description:
-      "A full-stack application leveraging an express server, mySQL database, handlebars templates, javascript, and chart.js to create an interactive stock market themed game.",
-    technologies: "JavaScript, HTML, CSS",
+      "It takes time doing config over and over again for the same projects when the changes are marginal. Kickstart your new GraphQL and Apollo project today with this simple boilercode solution allowing you to setup a server in seconds.",
+    technologies: "Node.js, Apollo-Server, GraphQL",
     tools:
       "bcrypt, chart.js, session-sequelize, express, handlebars.js, express.js, mySQL, sequelize ORM",
-    github: "https://github.com/conorjkelly96/stockscape",
-    app: "https://stockscape.herokuapp.com/",
-    image: nosqlapi,
+    github: "https://github.com/conorjkelly96/graphql-boilerplate-code",
+    app: "https://github.com/conorjkelly96/graphql-boilerplate-code",
+    image: graphqlapollo,
   },
   {
-    title: "StockScape",
+    title: "Demand Planning Tool",
     description:
-      "A full-stack application leveraging an express server, mySQL database, handlebars templates, javascript, and chart.js to create an interactive stock market themed game.",
+      "A demand planning tool used to help companies calculate procurement quantities based on inventory management parameters.",
     technologies: "JavaScript, HTML, CSS",
     tools:
       "bcrypt, chart.js, session-sequelize, express, handlebars.js, express.js, mySQL, sequelize ORM",
-    github: "https://github.com/conorjkelly96/stockscape",
-    app: "https://stockscape.herokuapp.com/",
-    image: nosqlapi,
+    github: "https://github.com/conorjkelly96/demand-planning-tool",
+    app: "https://github.com/conorjkelly96/demand-planning-tool",
+    image: scm,
   },
   {
-    title: "StockScape",
+    title: "Bored-As-Book",
     description:
-      "A full-stack application leveraging an express server, mySQL database, handlebars templates, javascript, and chart.js to create an interactive stock market themed game.",
+      "A tongue in cheek web application designed to allow users to randomly generate activities, save to local storage & search web results based on activities selected.",
     technologies: "JavaScript, HTML, CSS",
     tools:
       "bcrypt, chart.js, session-sequelize, express, handlebars.js, express.js, mySQL, sequelize ORM",
-    github: "https://github.com/conorjkelly96/stockscape",
-    app: "https://stockscape.herokuapp.com/",
-    image: nosqlapi,
+    github: "https://github.com/conorjkelly96/bored-as-book",
+    app: "https://conorjkelly96.github.io/bored-as-book/",
+    image: boredasbook,
   },
   {
-    title: "StockScape",
+    title: "Random Password Generator",
     description:
-      "A full-stack application leveraging an express server, mySQL database, handlebars templates, javascript, and chart.js to create an interactive stock market themed game.",
+      "This project consists of building an application which allows the user to randomly generate a password given a set of user defined criteria. It combines the use of HTML and CSS to build the core elements of the webpage, and javascript to accept user input and convert into an output.",
     technologies: "JavaScript, HTML, CSS",
     tools:
       "bcrypt, chart.js, session-sequelize, express, handlebars.js, express.js, mySQL, sequelize ORM",
-    github: "https://github.com/conorjkelly96/stockscape",
-    app: "https://stockscape.herokuapp.com/",
-    image: nosqlapi,
+    github: "https://github.com/conorjkelly96/random-password-generator",
+    app: "https://conorjkelly96.github.io/random-password-generator/",
+    image: passwordgenerator,
   },
   {
     title: "StockScape",
