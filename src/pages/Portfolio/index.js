@@ -38,10 +38,10 @@ export const Portfolio = () => {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small" color="primary">
+                <Button size="small" color="primary" href={project.github}>
                   GitHub
                 </Button>
-                <Button size="small" color="primary">
+                <Button size="small" color="primary" href={project.app}>
                   Application
                 </Button>
               </CardActions>
