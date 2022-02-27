@@ -10,6 +10,8 @@ import graphqlapollo from "./images/graphql_apollo.png";
 import scm from "./images/scm.png";
 import boredasbook from "./images/boredasbook.gif";
 import passwordgenerator from "./images/passwordgenerator.gif";
+import seorefactoring from "./images/seorefactoring.gif";
+import teamprofilegenerator from "./images/teamprofilegenerator.png";
 
 export const useStyles = makeStyles({
   cardContainer: {
@@ -128,25 +130,26 @@ export const projects = [
     image: passwordgenerator,
   },
   {
-    title: "StockScape",
+    title: "Semantic HMTL Refactoring",
     description:
-      "A full-stack application leveraging an express server, mySQL database, handlebars templates, javascript, and chart.js to create an interactive stock market themed game.",
-    technologies: "JavaScript, HTML, CSS",
+      "Undertaking a refactoring task to ensure the client's website is optimise using semantic HTML and has higher accessibility.",
+    technologies: "HTML, CSS",
     tools:
       "bcrypt, chart.js, session-sequelize, express, handlebars.js, express.js, mySQL, sequelize ORM",
-    github: "https://github.com/conorjkelly96/stockscape",
-    app: "https://stockscape.herokuapp.com/",
-    image: nosqlapi,
+    github:
+      "https://github.com/conorjkelly96/semantic-html-refactoring-marketing-agency",
+    app: "https://conorjkelly96.github.io/semantic-html-refactoring-marketing-agency/",
+    image: seorefactoring,
   },
   {
     title: "StockScape",
     description:
-      "A full-stack application leveraging an express server, mySQL database, handlebars templates, javascript, and chart.js to create an interactive stock market themed game.",
+      "This command line interface application is designed to allow managers to quickly generate a Team Profile webpage based on the different types of employees they want to add with their corresponding contact information.",
     technologies: "JavaScript, HTML, CSS",
     tools:
       "bcrypt, chart.js, session-sequelize, express, handlebars.js, express.js, mySQL, sequelize ORM",
-    github: "https://github.com/conorjkelly96/stockscape",
-    app: "https://stockscape.herokuapp.com/",
-    image: nosqlapi,
+    github: "https://github.com/conorjkelly96/team-profile-generator",
+    app: "https://github.com/conorjkelly96/team-profile-generator",
+    image: teamprofilegenerator,
   },
 ];
