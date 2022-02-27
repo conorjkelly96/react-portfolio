@@ -1,8 +1,7 @@
-import * as React from 'react';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import { useState } from 'react';
 
 const style = {
   position: 'absolute',
@@ -17,13 +16,11 @@ const style = {
 };
 
 export const SubmitModal = () => {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
+  const [open, setOpen] = useState(false);
   const handleClose = () => setOpen(false);
 
   return (
     <div>
-      <Button onClick={handleOpen}>Open modal</Button>
       <Modal
         open={open}
         onClose={handleClose}
@@ -35,7 +32,7 @@ export const SubmitModal = () => {
             Text in a modal
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+            Thank you for submitting your contact details - unfortunately I don't have a backend at the minute. Fancy taking a look at my server side projects? Take a look <span href="https://github.com/conorjkelly96">here!</span>
           </Typography>
         </Box>
       </Modal>
