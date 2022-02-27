@@ -7,8 +7,8 @@ import ListItemText from "@mui/material/ListItemText";
 
 const pages = [
   { label: "Home", href: "/" },
-  { label: "Projects", href: "/projects" },
-  { label: "About Me", href: "/about-me" },
+  { label: "Projects", href: "/portfolio" },
+  { label: "Resume Page", href: "/resume" },
   { label: "Contact Me", href: "/contact-me" },
 ];
 

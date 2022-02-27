@@ -14,23 +14,23 @@ const style = {
   p: 4,
 };
 
-export const SubmitModal = ({ show, handleClose }) => {
+export const SubmitModal = ({ show, onClose }) => {
   return (
     <Modal
-      show={show}
-      onClose={handleClose}
+      open={show}
+      onClose={onClose}
       aria-labelledby="modal-modal-title"
       aria-describedby="modal-modal-description"
     >
       <Box sx={style}>
         <Typography id="modal-modal-title" variant="h6" component="h2">
-          Text in a modal
+          Thanks for getting in touch!
         </Typography>
         <Typography id="modal-modal-description" sx={{ mt: 2 }}>
           Thank you for submitting your contact details - unfortunately I don't
           have a backend at the minute. Fancy taking a look at my server side
-          projects? Take a look{" "}
-          <span href="https://github.com/conorjkelly96">here!</span>
+          projects? Take a look
+          <span href="https://github.com/conorjkelly96"> here!</span>
         </Typography>
       </Box>
     </Modal>

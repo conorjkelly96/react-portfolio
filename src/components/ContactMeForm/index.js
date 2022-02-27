@@ -16,8 +16,6 @@ const theme = createTheme();
 export const ContactMeForm = () => {
   const [showNoBackEndModal, setNoBackEndModal] = useState(false);
 
-  const handleClose = () => setNoBackEndModal(false);
-
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -34,11 +32,12 @@ export const ContactMeForm = () => {
     setNoBackEndModal(true);
   };
 
+  const handleClose = () => setNoBackEndModal(false);
+
   return (
     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
-        <SubmitModal show={showNoBackEndModal} onClose={handleClose} />
         <Box
           onSubmit={handleSubmit}
           sx={{
@@ -108,10 +107,11 @@ export const ContactMeForm = () => {
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
-              onSubmit={onSubmitContactMeForm}
+              onClick={onSubmitContactMeForm}
             >
               Submit
             </Button>
+            <SubmitModal show={showNoBackEndModal} onClose={handleClose} />
           </Box>
         </Box>
       </Container>
