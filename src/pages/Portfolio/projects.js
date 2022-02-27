@@ -3,6 +3,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import stockscape from "./images/Stockscape.png";
 import nosqlapi from "./images/no-sql-api.gif";
 import jscodequiz from "./images/jscodequiz.gif";
+import notetakerexpress from "./images/notetaker.gif";
+import weatherdashbaord from "./images/weatherdashboard.gif";
+import opensourcelogo from "./images/opensource-logo.png";
 
 export const useStyles = makeStyles({
   cardContainer: {
@@ -45,37 +48,36 @@ export const projects = [
     image: jscodequiz,
   },
   {
-    title: "StockScape",
+    title: "Note Taker Express.js",
     description:
-      "A full-stack application leveraging an express server, mySQL database, handlebars templates, javascript, and chart.js to create an interactive stock market themed game.",
+      "A web application designed to allow users to make and save notes. Leveraging express.js",
     technologies: "JavaScript, HTML, CSS",
-    tools:
-      "bcrypt, chart.js, session-sequelize, express, handlebars.js, express.js, mySQL, sequelize ORM",
-    github: "https://github.com/conorjkelly96/stockscape",
-    app: "https://stockscape.herokuapp.com/",
-    image: nosqlapi,
+    tools: "express.js, moment.js, uuidv4",
+    github: "https://github.com/conorjkelly96/note-taker-express.js",
+    app: "https://note-taker-application-express.herokuapp.com/",
+    image: notetakerexpress,
   },
   {
-    title: "StockScape",
+    title: "Weather Dashboard",
     description:
-      "A full-stack application leveraging an express server, mySQL database, handlebars templates, javascript, and chart.js to create an interactive stock market themed game.",
-    technologies: "JavaScript, HTML, CSS",
+      "Using 3rd party APIs to generate weather results based on user search input.",
+    technologies: "JavaScript, HTML, CSS (BULMA), APIs",
     tools:
       "bcrypt, chart.js, session-sequelize, express, handlebars.js, express.js, mySQL, sequelize ORM",
     github: "https://github.com/conorjkelly96/stockscape",
     app: "https://stockscape.herokuapp.com/",
-    image: nosqlapi,
+    image: weatherdashbaord,
   },
   {
-    title: "StockScape",
+    title: "Tech blog",
     description:
-      "A full-stack application leveraging an express server, mySQL database, handlebars templates, javascript, and chart.js to create an interactive stock market themed game.",
+      "Creating a tech blog with HTML, CSS and JavaScript leveraging sequelize.js, handlebars.js, express.js & mySQL.",
     technologies: "JavaScript, HTML, CSS",
     tools:
       "bcrypt, chart.js, session-sequelize, express, handlebars.js, express.js, mySQL, sequelize ORM",
-    github: "https://github.com/conorjkelly96/stockscape",
-    app: "https://stockscape.herokuapp.com/",
-    image: nosqlapi,
+    github: "https://github.com/conorjkelly96/tech-blog",
+    app: "https://github.com/conorjkelly96/tech-blog",
+    image: opensourcelogo,
   },
   {
     title: "StockScape",

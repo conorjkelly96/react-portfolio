@@ -8,6 +8,8 @@ import {
   CardMedia,
   Button,
   Typography,
+  IconButton,
+  CardHeader,
 } from "@material-ui/core";
 
 import { useStyles, projects } from "./projects";
@@ -20,18 +22,18 @@ export const Portfolio = () => {
         {projects.map((project, index) => (
           <Grid item xs={12} sm={6} md={4} lg={4} xl={2} key={index}>
             <Card className={classes.cardContainer}>
+              <CardHeader
+                title={project.title}
+                subheader={project.technologies}
+              />
               <CardMedia
                 component="img"
-                alt="pj1"
-                height="140"
+                height="194"
                 image={project.image}
+                alt="Paella dish"
               />
               <CardContent>
-                <Typography
-                  color="textSecondary"
-                  component="paragraph"
-                  variant="body2"
-                >
+                <Typography variant="body2" color="text.secondary">
                   {project.description}
                 </Typography>
               </CardContent>
