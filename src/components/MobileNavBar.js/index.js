@@ -26,7 +26,7 @@ export const MobileNavBar = ({ open, onClose }) => {
             {pages.map(({ label, href }) => (
               <ListItem button key={label}>
                 <ListItemText>
-                  <Link href={href}>{label}</Link>
+                  <Link to={href}>{label}</Link>
                 </ListItemText>
               </ListItem>
             ))}

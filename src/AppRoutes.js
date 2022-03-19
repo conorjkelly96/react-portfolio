@@ -4,16 +4,14 @@ import { Home } from "./pages/Home";
 import { Portfolio } from "./pages/Portfolio";
 import { ContactMe } from "./pages/ContactMe";
 import { ResumePage } from "./pages/ResumePage";
-import { Spinner } from "./pages/ResumePage/spinner";
 
 export const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/*" element={<Home />}></Route>
       <Route path="/portfolio" element={<Portfolio />} exact={true}></Route>
       <Route path="/contact-me" element={<ContactMe />} exact={true}></Route>
       <Route path="/resume" element={<ResumePage />} exact={true}></Route>
-      <Route path="/spinner" component={() => Spinner}></Route>
+      <Route path="/*" element={<Home />}></Route>
     </Routes>
   );
 };
