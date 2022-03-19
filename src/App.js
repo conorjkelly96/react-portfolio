@@ -1,4 +1,4 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 import { AppRoutes } from "./AppRoutes";
 import { Footer } from "./components/Footer";
@@ -6,10 +6,10 @@ import { NavBar } from "./components/NavBar";
 
 export const App = () => {
   return (
-    <Router>
+    <BrowserRouter>
       <NavBar />
       <AppRoutes />
       <Footer />
-    </Router>
+    </BrowserRouter>
   );
 };
