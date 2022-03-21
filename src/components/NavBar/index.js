@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -15,14 +16,11 @@ const pages = [
   { label: "Projects", href: "/portfolio" },
   { label: "Resume Page", href: "/resume" },
   { label: "Contact Me", href: "/contact-me" },
-  {
-    label: "Download CV",
-    href: "https://drive.google.com/drive/u/0/folders/1_onqYVffGKXr1-kA8gWpGpB7oWl6n3rK",
-  },
 ];
 
 export const NavBar = () => {
   const [showDrawer, setShowDrawer] = useState(false);
+  const navigate = useNavigate();
 
   const handleOpenDrawer = () => {
     setShowDrawer(true);
@@ -71,13 +69,21 @@ export const NavBar = () => {
               {pages.map(({ label, href }) => (
                 <Button
                   key={label}
-                  onClick={handleCloseDrawer}
+                  onClick={() => {
+                    navigate(href, { replace: true });
+                  }}
                   sx={{ my: 2, color: "white", display: "block" }}
-                  href={href}
                 >
                   {label}
                 </Button>
               ))}
+              <Button
+                sx={{ my: 2, color: "white", display: "block" }}
+                href="https://drive.google.com/drive/u/0/folders/1_onqYVffGKXr1-kA8gWpGpB7oWl6n3rK"
+                target="_blank"
+              >
+                Download CV
+              </Button>
             </Box>
           </Toolbar>
         </Container>
