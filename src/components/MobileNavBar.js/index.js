@@ -10,6 +10,10 @@ const pages = [
   { label: "Projects", href: "/portfolio" },
   { label: "Resume Page", href: "/resume" },
   { label: "Contact Me", href: "/contact-me" },
+  {
+    label: "Download CV",
+    href: "https://drive.google.com/drive/u/0/folders/1_onqYVffGKXr1-kA8gWpGpB7oWl6n3rK",
+  },
 ];
 
 export const MobileNavBar = ({ open, onClose }) => {
